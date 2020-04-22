@@ -1,0 +1,205 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+img{
+	object-fit: cover;
+}
+
+
+#backgroundimg{
+	background-image: url(dundas1.jpg);
+	background-size:cover; /*Resizes it*/
+	width:auto;
+	height: 100vh;
+	//overflow: auto; /*Need this here for some reason */
+	display: inline block;
+}
+
+#container2{
+	width:100%;
+	height: 500px;
+
+	background-color: white;
+	color: black;
+	overflow: hidden;
+	border-bottom: solid black;
+	border-top:  solid black;
+
+}
+.container2Text{
+	height:0.1px;
+	float: left;
+	margin-right: 420px;
+	position: relative;
+	background-color: red;
+
+
+}
+.container2Image{
+	width: 400px;
+	color:black;
+	float:right;	
+	object-fit: cover;
+	top:0;
+	border-left: solid black;
+	position: relative;
+
+
+}
+.container2Resume{
+	margin-right: 420px;
+	float:right;
+	float:bottom;
+	border:solid black;
+	padding: 10px 20px 10px 20px;
+
+	color: black;
+	margin: 40px;
+
+	font-family: 'DM Serif Display', serif;
+	font-size: 22px;
+	text-align: center;
+}
+.container2Resume a{
+	color:white;
+	border:solid black;
+	background-color: black;
+}
+#container3{
+	width: 100%;
+	height: 800px;
+
+	background-color: white;
+	color: black;
+}
+
+
+
+.titleText{
+	top: 50%;
+	left: 50%;
+	color: white;
+	position: absolute;
+	font-family: 'DM Serif Display', serif;
+	font-size: 80px;
+	z-index: 2;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.header{
+	height: 10vh;
+	z-index: 2;
+	position: absolute;
+  	right: 0;
+
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	color: white;
+	font-weight: 900;
+}
+.header a{
+	color: white;
+	text-decoration: none;
+
+}
+
+
+.right {
+  float: right;
+  z-index:2;
+  width: 120px;
+  padding: 35px;
+  padding-right: 50px;
+}
+.right a:hover{
+
+}
+
+.rightborder{
+  float: right;
+  z-index:4;
+  width: 120px;
+  padding: 35px;
+  padding-right: 50px;
+  display: inline-block;
+	padding-right: 35px;
+}
+
+
+.overlay {
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.1); /*can be anything, of course*/
+}
+.textCenter{
+	text-align: center;
+}
+
+h1{
+	padding: 30px;
+	padding-top: 50px;
+	font-family: 'DM Serif Display', serif;
+	font-size: 45px;
+}
+
+p{
+	padding: 30px;
+	padding-top: 0px;
+	line-height: 1.4;
+
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	color: black;
+}
